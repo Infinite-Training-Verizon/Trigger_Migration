@@ -22,5 +22,6 @@ public class MultipleVariables {
         System.out.println("Simon Birth year " + BIRTH_YEAR + " and Birth Month " + BIRTH_MONTH + " and Birth Day " + BIRTH_DAY);
         System.out.println("Raining " + Raining + "So you get the savings of? " + DAY_LIGHT_SAVING_DAYS );
 
+
     }
 }
