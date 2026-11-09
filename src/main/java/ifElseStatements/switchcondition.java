@@ -13,14 +13,15 @@ public class switchcondition {
                     age=4;
                     System.out.println("You cant enter ");
                 }
-            case 3:
-                if (age <= 5) {
-                    System.out.println("You cant enter ");
-                }
             case 4:
                 if (age == 4) {
                     age=5;
                     System.out.println("You can enter"+age);
+                    break;
+                }
+            case 3:
+                if (age <= 5) {
+                    System.out.println("You  enter ");
                 }
         }
     }
