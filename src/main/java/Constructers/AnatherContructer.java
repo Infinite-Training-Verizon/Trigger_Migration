@@ -20,7 +20,8 @@ public class AnatherContructer {
     public static void main(String[] args) {
           AnatherContructer result= new AnatherContructer("Simon", "richard", 25,6.2f, 192.5f,8979372897l);
         Object[] arr= {result.firstName, result.lastName,result.socialSecurityNumber,result.weight,result.height};
-        System.out.println(Arrays.toString(arr));
+        for(Object r : arr) {
+            System.out.println(Arrays.toString(arr));
 //          String mainResult=  result.firstName,
 //          result.lastName,
 //          result.height,
@@ -29,5 +30,6 @@ public class AnatherContructer {
 //        result.socialSecurityNumber;
 //        System.out.println(mainResult);
 //
+        }
     }
 }

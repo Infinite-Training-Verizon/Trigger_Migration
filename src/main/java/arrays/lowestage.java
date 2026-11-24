@@ -5,7 +5,7 @@ public class lowestage {
         int[] ages = {20, 34, 19, 34, 45};
         int lowestAge = ages[0];
         for (int age : ages) {
-            if (lowestAge < age) {
+            if (lowestAge > age) {
                 lowestAge = age;
             }
         }

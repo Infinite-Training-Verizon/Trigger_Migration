@@ -1,19 +1,21 @@
 package Methods;
 
 public class overloading {
-    static int methodOverLoading(int a, int b, int c){
+    public int methodOverLoading(int a, int b, int c){
         return a+b+c;
 }
-    static double methodOverLoading(double a, double b, double c) {
+    public double methodOverLoading(double a, double b, double c) {
         return a + b + c;
     }
     public static void main(String[] args) {
-        int printInt=methodOverLoading(2,4,7);
-        Double printDouble=methodOverLoading(2.2,2.2,2.2);
-        for(int i=0;i<printInt;i++){
+        overloading obj = new overloading();
+       int printing=  obj.methodOverLoading(1, 2, 3);
+        overloading obj2 = new overloading();
+       Double doubles=  obj.methodOverLoading(2.3,3.5,3.3);
+        for(int i=0;i<printing;i++){
             System.out.println(i);
         }
-        System.out.println(printInt);
-        System.out.println(printDouble);
-    }
+        System.out.println(printing);
+        System.out.println(doubles);
+        }
 }

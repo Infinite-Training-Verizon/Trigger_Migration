@@ -16,8 +16,13 @@ public class Contrustermethods {
     public Contrustermethods(String carName, int carPrice) {
         this(carName , carPrice, 2340);
     }
-    public void carInfromation(){
+    public Contrustermethods(String carName) {
+        this(carName, 2340,1997);
+
+    }
+    public String carInfromation(){
         System.out.println("carInfromation" + carName + " " + carYear + " " + carPrice);
+        return carName + " " + carYear + " " + carPrice;
     }
     public int getCarPrice(int carPrice){
         return carPrice;
@@ -26,9 +31,12 @@ public class Contrustermethods {
         Contrustermethods obj1 = new Contrustermethods("Toyota" ,23333, 25000);
         Contrustermethods obj2 = new Contrustermethods(2055);
         Contrustermethods obj3 = new Contrustermethods("CX13", 2067);
-        obj2.carInfromation();
+        Contrustermethods obj4 = new Contrustermethods("Mazda");
         obj1.carInfromation();
+        obj2.carInfromation();
         obj3.carInfromation();
-        System.out.println(obj1.getCarPrice(23));
+        obj4.carInfromation();
+
+        System.out.println(obj2.getCarPrice(23));
     }
 }
